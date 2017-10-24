@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("h1").click(function(){
+                $('h1').hide()
+                });
+
+            $('#show').click(function(){
+                $('#test').show();
+                });
+
+            $('#hide').click(function(){
+                $('#test').hide();
+                });
+
+            $('#toggle').click(function(){
+                $('.toggle_text').toggle();
+                });
+
+            $('#slide').click(function(){
+            $('#slide_text').slideToggle('slow');
+            });
+
+            $('#fadein').click(function(){
+                $('#fadein1').fadeIn(500);
+            })
+
+            $('#fadeout').click(function(){
+                $('#fadeout1').fadeOut(500);
+            })
+
+            $('#before1').before($('#before2'));
+            $('#after2').after($('#after1'));
+
+            $('#appendbutton').click(function(){
+                $('#append').append(' This is Append text. ')
+            })
+
+            $('#html').html('<b>Add by html </b>')
+            
+        });
+            
+    
+    </script>
+</head>
+<body>
+
+    <h1>Click</h1>
+
+    <button id="show">Show it</button>
+    <button id='hide'>Hide it</button>
+    <p id='test'>Show it</p>
+
+    <button id='toggle'>Toggle</button>
+    <p class='toggle_text'>Hi</p>
+    <p class='toggle_text' style = 'display: none'>Hello</p>
+
+    <button id='slide'>Slide Toggle</button>
+    <p id='slide_text'>Hi</p>
+
+    <button id='fadein'>click to fade in</button>
+    <div id="fadein1" style="width:80px;height:80px;display:none;background-color:green;"></div>
+
+    <button id='fadeout'>click to fade out</button>
+    <div id="fadeout1" style="width:80px;height:80px;background-color:green;"></div>
+
+    <p id='before1'>Hi</p>
+    <p id='before2'>I would like to say:</p>
+
+    <p id='after1'>Hi</p>
+    <p id='after2'>I would like to say:</p>
+
+    <button id='appendbutton'>Append button</button>
+    <p id='append'>This is a paragraph</p>
+
+    <div id='html'></div>
+
+
+</body>
+</html>
