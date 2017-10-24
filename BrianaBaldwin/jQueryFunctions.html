@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang=en>
+<head></head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    
+    $("header").click(function(){
+        $("h1").hide();
+    });
+
+    $("#hide1").click(function(){
+        $("p.testing").hide();
+    });
+
+    $("#show1").click(function(){
+        $("p").show();
+    });
+
+    $("#show1").click(function(){
+        $("p.testing").show();
+    });
+
+    $("#show1").click(function(){
+        $("p").show();
+    });
+
+    $("#show1").click(function(){
+        $("p").show();
+    });
+
+    $("#hide2").toggle(function(){
+        $("p").show();
+    });
+});
+</script>
+
+<body>
+    <header>
+        <h1 class="Headertxt"><center>Welcome to my Webpage</center></h1>
+        <p class="showh1">If you click the text above, my header will disappear! </p>
+    </header>
+    <article>
+        <p class="testing">This is the main content of my page!</p>
+        <button id="hide1">If you click me I will make the above text disappear</button>
+        <button id="show1">Show</button>
+    </article>
+    <section>
+        <p>Here is part 2 of my page...</p>
+        <button id="hide2">Hide</button>
+        <button id="show2">Show</button>
+    </section>
+    <footer>
+        <p>Here is the footer of my webpage... Goodbye!!</p>
+        <button id="hide3">Hide</button>
+        <button id="show3">Show</button>
+    </footer>
+</body>
+</html>
+
+click
+.hide
+.show
+.toggle
+.slideDown
+.slideUp
+.slideToggle
+.fadeIn
+.fadeOut
+.addClass
+.before
+.after
+.append
+.html
+.attr
+.val
+.text
+.data
