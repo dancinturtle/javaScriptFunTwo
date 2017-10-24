@@ -1,0 +1,62 @@
+<<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Position Practice</title>
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	  <script>
+			$(document).ready(function(){
+				$("#header").click(function(){
+					alert("your first jQuery project");
+				});
+				$('#navigation').hide(300).show(3000);
+				$('li').slideup(1000).delay(1000).slidedown(1000);
+				$('#footer').fadeIn(200).fadeOut(400);
+				$('a').addClass('my_a_tag');
+			});
+			</script>
+			</head>
+			<body>
+				<div id="wrapper">
+					<div id="header">
+						<h1>Javascript Basics</h1>
+					</div>
+					 <div id="navigation">
+						 <ul class="navul">
+							 <li>Home</li>
+							 <li>Javascript overview</li>
+							<li>Variable Declaration</li>
+							<li>Variable assignment</li>
+							<li>Data Type</li>
+							<li>Conditionals</li>
+							<li>Loops</li>
+							<li>Function</li>
+							<li>Projects</li>
+							<li>Assignment</li>
+							<li>Quiz</li>
+						</ul>
+					</div>
+					<div id="main_content">
+						<div>
+							<h2 class="heading1">Javascript Basics</h2>
+							<p class="paragraph1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. </p>
+							<ul class="main_content_ul">
+							<li><a href="#">I added a class here Variable Declaration</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa
+							</li>
+							<li><a href="#">Variable Declaration</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa
+							</li>
+							<li><a href="#">Variable Declaration</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa
+							</li>
+							<li><a href="#">Variable Declaration</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa
+							</li>
+							<li><a href="#">Variable Declaration</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="footer">
+					<p class="paragraph2">For more useful information check out this ulr: <a href="#">JavaScript!</a></p>
+				</div>
+			</div><!-- end of wrapper -->
+		</body>
+</html>
