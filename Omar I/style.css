@@ -1,0 +1,51 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font: arial, sans-serif;
+}
+
+
+#wrapper {
+    width: 970px;
+    height: 1000px;
+    background: white;
+    padding: 10px;
+}
+
+.row {
+    display: block;
+    width: 970px;
+    height: 300px;
+    margin-top: 10px;
+}
+
+.ninja {
+    display: inline-block;
+    height: 300px;
+    width: 233px;
+    border: 1px dotted blue;
+    margin-right: 6px;
+    padding: 0px;
+    background: white;
+    border: 1px solid black;
+}
+
+.ninjalast {
+    margin-right: 0px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+button {
+    background: #029e0f;
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
