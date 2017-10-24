@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .cattext {
+            background: #FF96A9;
+        }
+        .catpic{
+            display: block;
+        }
+    </style>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript"> 
+    $(document).ready(function(){
+        console.log("my document is ready!")
+        $(".test").after("<p>Is this working? It's working!</p>");
+        $("#mybuttons").click(function(){
+            $("#hidden").hide("slow");
+        });
+        $("#seek").hide();
+        $("#mybuttons2").click(function(){
+            $("#seek").show("slow");
+        });
+        $("#mybuttons3").click(function(){
+            $(".catpic").toggle("slow");
+        });
+        $("div").append("Here's the more stuffies you want! Raa >:D");
+        $("div").addClass("cattext");
+            console.log("this worked");
+    });
+    </script>
+</head>
+<body>
+    <p class="test">I'm playing around with jQuery for the first time!</p>
+    <p id="hidden">Let's play hide and seek! Once you touch me, the game will begin.</p>
+    <hr>
+    <button type="button" id="mybuttons">Hide</button>
+    <button type="button" id="mybuttons2">Seek</button>
+    <button type="button" id="mybuttons3">I don't want to see this cat</button>
+    <button type="button" id="mybuttons4">Four</button>
+    <button type="button" id="mybuttons5">Five</button>
+    <p class="test"> I really hope I can get the hang of it!</p>
+    <hr>
+    <input type="text" name="search">
+    <p id="seek">NOW I"M HERE!!!!!</p>
+    <br>
+    <br>
+    <img src="moti.jpg" class="catpic" alt="kitty" height="100" width="150">
+    <div>
+        I want extra stuffies!!
+    </div>
+    <p class="cattext">this is my cat</p>
+</body>
+</html>
