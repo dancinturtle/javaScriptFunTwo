@@ -1,0 +1,18 @@
+.container{
+    margin: 0px auto;
+    padding: 0px;
+    width: 75%;
+    /* text-align: center; */
+}
+img{
+    width: 200px;
+}
+
+button{
+    display: block;
+    /* text-align: left;
+    margin-left: 75px; */
+    color: white;
+    background: green;
+    box-shadow: 1px, 1px, 1px, gray;
+}
