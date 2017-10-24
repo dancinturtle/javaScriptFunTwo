@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function(){
+            console.log("Document Ready...");
+            $('#hide_show').click(function(){
+                console.log("Clicked on Hide/Show");
+                if($(this).siblings('h2').is(":visible")){
+                    $(this).siblings('h2').hide("slow");
+                    $(this).text("Show");
+                }else {
+                    $(this).siblings('h2').show("slow");
+                    $(this).text("Hide");
+                }
+            });
+
+            $('#slide_updown').click(function(){
+                console.log("Clicked on Slide button");
+                if($(this).siblings('h2').is(":visible")){
+                    $(this).siblings('h2').slideUp("slow");
+                    $(this).text("SlideDown");
+                }else {
+                    $(this).siblings('h2').slideDown("slow");
+                    $(this).text("SlideUp");
+                }
+            });
+
+            $('#fade_inout').click(function(){
+                console.log("Clicked on Fade button");
+                if($(this).siblings('h2').is(":visible")){
+                    $(this).siblings('h2').fadeOut("slow");
+                    $(this).text("FadeIn");
+                }else {
+                    $(this).siblings('h2').fadeIn("slow");
+                    $(this).text("FadeOut");
+                }
+            });
+
+            $('#slideToggle').click(function(){
+                console.log("Clicked on SlideToggle button");
+                $(this).siblings('h2').slideToggle("slow");
+            });
+
+            $('h3').attr("display","none");
+
+            $('#toggle').click(function(){
+                console.log("Clicked on Toggle button");
+                $('h3').toggle("slow");
+            });
+
+            $('#addClass').click(function(){
+                console.log("Clicked on AddClass button");
+                if($(this).hasClass("btn")){
+                    $(this).removeClass("btn blue_btn");
+                    $(this).text("Fancy Me");
+                } else {
+                    $(this).addClass("btn blue_btn");
+                    $(this).text("Turn Me Back");
+                }
+            });
+
+            $('#change_content').click(function(){
+                console.log("Clicked on change content button");
+                console.log("Value selected is : " + $('select').find(":selected").val());
+                var change = $('select').find(":selected").val();
+                switch (change) {
+                    case "before":
+                        $(this).siblings('span').before("Hello World!!!");
+                        break;
+                    case "after":
+                        $(this).siblings('span').after("Hello World!!!");
+                        break;
+                    case "append":
+                        $(this).siblings('span').append("Hello World!!!");
+                        break;
+                    case "html":
+                        $(this).siblings('span').html("Hello World!!!");
+                    default:
+                        break;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>jQuery Functions</h1>
+        <div>
+            <h2>Hide/Show</h2>
+            <button id="hide_show">Hide</button>
+            <span>
+                Click on the button to Hide/Show the Title
+            </span>
+        </div>
+        <div>
+            <h2>SlideDown/SlideUp</h2>
+            <button id="slide_updown">SlideUp</button>
+            <span>
+                Click on the button to SlideDown/SlideUp the Title
+            </span>
+        </div>
+        <div>
+            <h2>FadeIn/FadeOut</h2>
+            <button id="fade_inout">FadeOut</button>
+            <span>
+                Click on the button to FadeIn/FadeOut the Title
+            </span>
+        </div>
+        <div>
+            <h2>SlideToggle</h2>
+            <button id="slideToggle">SlideToggle</button>
+            <span>
+                Click on the button to SlideToggle the Title
+            </span>
+        </div>
+        <div>
+            <h2>Toggle</h2>
+            <h3>Hello World!!!</h3>
+            <button id="toggle">Toggle</button>
+            <span>
+                Click on the button to Toggle Hello World!!!
+            </span>
+        </div>
+        <div>
+            <h2>AddClass</h2>
+            <button id="addClass">Fancy Me</button>
+            <span>
+                Click on the button to add a fancy class to the button.
+            </span>
+        </div>
+        <div>
+            <h2>Add/Update Content</h2>
+            <select name="func_name" id="select">
+                <option value="before">Before</option>
+                <option value="after">After</option>
+                <option value="append">Append</option>
+                <option value="html">Update</option>
+            </select>
+            <button id="change_content">Change Content</button>
+            <span>
+                Click on the button to add "Hello World" before/after/append/update this line.
+            </span>
+        </div>
+    </div>
+</body>
+</html>
