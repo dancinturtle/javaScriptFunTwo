@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<style>
+		.fontStyle{
+			color: red;
+		}
+
+		button{
+			background-color: #4CAF50;
+			border-radius: 10px;
+			display: block;
+			margin-bottom: 10px;
+		}
+
+	</style>
+	<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script>
+		$(document).ready(function(){
+			console.log("Doc is ready");
+			$('.clickingButton').click(function(){
+				console.log("Button clicked");
+			})
+			$('.hideButton').click(function(){
+				$('#hideandseekp').hide();
+			})
+			$('.showButton').click(function(){
+				$('#hideandseekp').show();
+			})
+			$('.toggleButton').click(function(){
+				$('#togglingdiv').toggle();
+			})
+			$('.slidedownButton').click(function(){
+				$('#slidediv').slideDown();
+			})
+			$('.slideupButton').click(function(){
+				$("#slidediv").slideUp();
+			})
+			$('.slidetoggleButton').click(function(){
+				$("#slidetogglediv").slideToggle();
+			})
+			$('.fadeinButton').click(function(){
+				$("#fadediv").fadeIn();
+			})
+			$('.fadeoutButton').click(function(){
+				$("#fadediv").fadeOut();
+			})
+			$('.addClassButton').click(function(){
+				$("#addClass").addClass("fontStyle");
+			})
+			$(".beforeButton").click(function(){
+				$('#beforep').before("<p>This goes above before paragraph</p>");
+			})
+			$(".afterButton").click(function(){
+				$("#afterp").after("<p>This goes after after paragraph</p>");
+			})
+			$(".appendButton").click(function(){
+				$("#appenddiv").append("<span>This is appeneded to the append div.</span>");
+			})
+			$(".htmlButton").click(function(){
+				$("#htmlp").html("<a href='#'>This is a link we just added.</a>");
+			})
+			$(".attrButton").click(function(){
+				$("#attrp").attr("title");
+				$("#pattradded").text(title);
+			})
+			$(".valButton").click(function(){
+				$("#valp").val();
+			})
+			$(".textButton").click(function(){
+				$("#textp").text("This is added text.");
+			})
+			$(".dataButton").click(function(){
+				$("#dataDiv").data("test", {first: 16, last: "pizza!"});
+			})
+
+		});
+	</script>
+</head>
+
+	<body>
+		<div id="container">
+			<div class="click">
+				<h2>Click</h2>
+				<p><button class="clickingButton">Click</button></p>
+			</div>
+			<hr>
+			<div class="hideshow">
+				<h2>Hide/Show</h2>
+				<p id="hideandseekp">
+					<button class="hideButton">Hide</button>
+					<button class="showButton">Show</button>
+					Hide/Show this content
+				</p>
+			</div>
+			<div class="toggle">
+				<h2>Toggle</h2>
+				<button class="toggleButton">Click to toggle the below div</button>
+				<div id="togglingdiv"><p>This div toggles</p></div>
+			</div>
+			<hr>
+			<div class="slideDownAndSlideUp">
+				<h2>Slide Down/Slide Up</h2>
+				<button class="slidedownButton">Click here to slide down div content</button>
+				<button class="slideupButton">Click here to slide up div content</button>
+				<div id="slidediv"><p>This text will slide down or slide up</p></div>
+			</div>
+			<hr>
+			<div class="slideToggle">
+				<h2>Slide Toggle</h2>
+				<button class="toggleButton">Click here to toggle content</button>
+				<div id="slidetogglediv"><p>This content will toggle</p></div>
+			</div>
+			<hr>
+			<div class="fadeInFadeOut">
+				<h2>Fade In/Fade Out</h2>
+				<button class="fadeinButton">Click here to fade content in</button>
+				<button class="fadeoutButton">Click here to fade content out</button>
+				<div id="fadediv"><p>This content will fade in or fade out</p></div>
+			</div>
+			<hr>
+			<div class="addClass">
+				<h2>Add Class</h2>
+				<button class="addClassButton">Click here to add a class</button>
+				<p id="addClass">This content will get font style class added to it</p>
+			</div>
+			<hr>
+			<div class="before">
+				<h2>Before</h2>
+				<button class="beforeButton">Click here to add content before the follwing text</button>
+				<p id="beforep">There will be content above this once button is pressed</p>
+			</div>
+			<hr>
+			<div class="after">
+				<h2>After</h2>
+				<button class="afterButton">Click here to add content after the following text</button>
+				<p id="afterp">There will be content below this once button is pressed</p>
+			</div>
+			<hr>
+			<div class="append">
+				<h2>Append</h2>
+				<button class="appendButton">Click here to append content onto the following text</button>
+				<p id="appenddiv">There will be content appended to this</p>
+			</div>
+			<hr>
+			<div class="html">
+				<h2>HTML</h2>
+				<button class="htmlButton">Click here to rewrite html of the following text</button>
+				<p id="htmlp">There will be a link after this text</p>
+			</div>
+			<hr>
+			<div class="attr">
+				<h2>Attr</h2>
+				<button class="attrButton">Click here to add attribute</button>
+				<p title="Wizard" id="attrp">This is paragraph with title attribute</p>
+				<p id="pattradded"></p>
+			</div>
+			<hr>
+			<div class="val">
+				<h2>Val</h2>
+				<button class="valButton">Click here to add value</button>
+				<p id="valp">This will have value added to it</p>
+			</div>
+			<hr>
+			<div class="text">
+				<h2>Text</h2>
+				<button class="textButton">Click here to add text to the following content</button>
+				<p id="textp"></p>
+			</div>
+			<hr>
+			<div class="data">
+				<h2>Data</h2>
+				<button class="dataButton">Click here to add data to the follwing content</button>
+				<div id="dataDiv"><p>This div will have data added to it</p></div>
+			</div>
+			<hr>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
