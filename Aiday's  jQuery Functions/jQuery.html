@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head>
+    <link rel="stylesheet" href="css.css">
+</head>
+    <title>Jquery Functions</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+<h1 class="header"> Movies</h1>
+<button type="button"> Latest Movies</button>
+<p> click the button</p>
+<ul> My Favorite Movies
+    <li> Titanic </li>
+    <li> Beautiful Mind</li>
+    <li> Shutter Island</li>
+</ul>
+
+<h1 class="header"> Dance</h1>
+<button type="button"> Dance Classes</button>
+<p> click the button</p>
+<ul> Dance Groups
+    <li> Pgd </li>
+    <li> Alonzo</li>
+    <li> Will Be</li>
+</ul>
+
+
+<h1 class="header"> Engineering</h1>
+<button type="button"> Bootcamps</button>
+<p> click the button</p>
+<ul> Bootcamps in Bay Area
+    <li> Coding Dojo</li>
+    <li> Hack Reactor</li>
+    <li> App Academy</li>
+    <h2> The End</h2>
+    <button class="append">Crack the Coding Interview</button>
+    <div class="result"></div>
+</ul>
+
+
+<a href="#">More information</a>
+</div>
+<script>
+    $(document).ready(function(){
+
+    $('h1').click(function(){
+            alert('hello');
+        });
+    $('button').click(function(){
+        $('button').css('background-color','red')
+        });
+    $('li').click(function(){
+        $('li').slideUp()
+    });
+        $('li').click(function(){
+            $('li').slideDown()
+        });
+    $('a').hover(function(){
+        $('a').slideToggle()
+    });
+    $('h2').hover(function(){
+        $('h2').text('Go Study!!')
+        $('h2').css('color','red')
+    });
+        $('.append').click(function(){
+            $('.result').append('<h3>Practice! Practice! Practice!</h3>')
+        });
+    });
+
+
+</script>
+
+</body>
+</html>
