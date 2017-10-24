@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disappearing Ninja</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("img").click(function(){
+                $(this).hide();
+            })
+            $("button").click(function(){
+                $("img").show();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>jQuery Assignment 1: Disapearing Ninjas</h1>
+        </header>
+        <article>
+            <img src="shiro.jpg" alt="shiro.jpg">
+            <img src="shiro.jpg" alt="shiro.jpg">
+            <img src="shiro.jpg" alt="shiro.jpg">
+            <img src="shiro.jpg" alt="shiro.jpg">
+        </article>
+        <article>
+            <img src="shiro.jpg" alt="shiro.jpg">
+            <img src="shiro.jpg" alt="shiro.jpg">
+            <img src="shiro.jpg" alt="shiro.jpg">
+            <img src="shiro.jpg" alt="shiro.jpg">
+            <button>Restore</button>
+        </article>
+
+    </div>
+</body>
+
+</html>
