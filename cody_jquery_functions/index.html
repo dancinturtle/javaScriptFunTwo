@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <title>jQuery Functions</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jq-click card mb-3">
+        <div class="card-body">
+          <p>Change text color to red.</p>
+          <a href="#/" class="btn btn-primary">.click()</a>
+        </div>
+      </div>
+      <div class="jq-hide card mb-3">
+        <div class="card-body">
+          <img src="http://placehold.it/50x50/ff0xee0" alt="thumbnail" class="img-fluid" />
+          <img src="http://placehold.it/50x50/aa0xcc0" alt="thumbnail" class="img-fluid" />
+          <img src="http://placehold.it/50x50/000000xffffff" alt="thumbnail" class="img-fluid" />
+          <img src="http://placehold.it/50x50/ff0xee0" alt="thumbnail" class="img-fluid" />
+          <img src="http://placehold.it/50x50/aa0xcc0" alt="thumbnail" class="img-fluid" />
+          <img src="http://placehold.it/50x50/000000xffffff" alt="thumbnail" class="img-fluid" />
+        </div>
+        <div class="card-body">
+          <p>Hide all images inside this box.</p>
+          <a href="#/" class="btn btn-primary">.hide()</a>
+        </div>
+      </div>
+      <div class="jq-show card mb-3">
+        <div class="card-body">
+          <p style="display: none;" class="text-muted">A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+          <p>Reveal hidden content.</p>
+          <a href="#/" class="btn btn-primary">.show()</a>
+        </div>
+      </div>
+      <div class="jq-toggle card mb-3">
+        <div class="card-body">
+          <p>Toggle night mode.</p>
+          <a href="#/" class="btn btn-primary">.toggle()</a>
+        </div>
+      </div>
+      <div class="jq-slideDown card mb-3">
+        <div class="card-body">
+          <div style="display: none" class="card bg-success mb-3 text-white">
+            <div class="card-body">
+              A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.
+            </div>
+          </div>
+          <p>Reveal content by sliding down.</p>
+          <a href="#/" class="btn btn-primary">.slideDown()</a>
+        </div>
+      </div>
+      <div class="jq-slideUp card mb-3">
+        <div class="card-body">
+          <div class="card bg-success mb-3 text-white">
+            <div class="card-body">
+              A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.
+            </div>
+          </div>
+          <p>Hide content by sliding up.</p>
+          <a href="#/" class="btn btn-primary">.slideUp()</a>
+        </div>
+      </div>
+      <div class="jq-slideToggle card mb-3">
+        <div class="card-body">
+          <p>Toggle controls.</p>
+          <a href="#/" class="btn btn-primary">.slideToggle()</a>
+          <form action="/" class="mt-3">
+            <div class="form-group custom-controls-stacked">
+              <label class="custom-control custom-radio">
+                <input id="radioStacked3" name="radio-stacked" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Toggle this custom radio</span>
+              </label>
+              <label class="custom-control custom-radio">
+                <input id="radioStacked4" name="radio-stacked" type="radio" class="custom-control-input">
+                <span class="custom-control-indicator"></span>
+                <span class="custom-control-description">Or toggle this other custom radio</span>
+              </label>
+            </div>
+            <label class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input">
+              <span class="custom-control-indicator"></span>
+              <span class="custom-control-description">Check this custom checkbox</span>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="jq-fadeIn card mb-3">
+        <div class="card-body">
+          <div style="display: none" class="alert alert-dark" role="alert">
+            Brake yo self foo!
+          </div>
+          <p>Reveal alert by fading in.</p>
+          <a href="#/" class="btn btn-primary">.fadeIn()</a>
+        </div>
+      </div>
+      <div class="jq-fadeOut card mb-3">
+        <div class="card-body">
+          <div class="alert alert-dark" role="alert">
+            Brake yo self foo!
+          </div>
+          <p>Hide alert by fading out.</p>
+          <a href="#/" class="btn btn-primary">.fadeOut()</a>
+        </div>
+      </div>
+      <div class="jq-addClass card mb-3">
+        <div class="card-body">
+          <p>Add a blue border to this card by appending class <code>.border-primary</code>.</p>
+          <a href="#/" class="btn btn-primary">.addClass()</a>
+        </div>
+      </div>
+      <div class="jq-before card mb-3">
+        <div class="card-body">
+          <p>Say hello before you say goodbye!</p>
+          <p>
+            Goodbye!
+          </p>
+          <a href="#/" class="btn btn-primary">.before()</a>
+        </div>
+      </div>
+      <div class="jq-after card mb-3">
+        <div class="card-body">
+          <p>Say goodbye after you say hello!</p>
+          <p>
+            Hello!
+          </p>
+          <a href="#/" class="btn btn-primary">.after()</a>
+        </div>
+      </div>
+      <div class="jq-append card mb-3">
+        <div class="card-body">
+          <p>Append another paragraph in this card.</p>
+          <a href="#/" class="btn btn-primary">.append()</a>
+        </div>
+      </div>
+      <div class="jq-html card mb-3">
+        <div class="card-body">
+          <div class="card mb-3">
+            <div class="card-body">
+              Brake yo self!
+            </div>
+          </div>
+          <p>Replace the HTML in the card above.</p>
+          <a href="#/" class="btn btn-primary">.html()</a>
+        </div>
+      </div>
+      <div class="jq-attr card mb-3">
+        <div class="card-body">
+          <p>
+            <a href="http://google.com/" class="btn btn-outline-success">Froogle</a>
+            <a href="http://yahoo.com/" class="btn btn-outline-primary">Achoo!</a>
+            <a href="http://bing.com/" class="btn btn-outline-warning">Ding</a>
+          </p>
+          <p>Click any link to view the href.</p>
+          <code>(no href)</code>
+        </div>
+      </div>
+      <div class="jq-val card mb-3">
+        <div class="card-body">
+          <form action="/">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" type="text" placeholder="Your email" class="form-control">
+            </div>
+          </form>
+          <p>
+            Start typing your email to see the value of input.
+          </p>
+          <code>(no email)</code>
+        </div>
+      </div>
+      <div class="jq-text card mb-3">
+        <div class="card-body">
+          <ul>
+            <li>Hello!</li>
+            <li>Adios!</li>
+            <li>Buenos diaz!</li>
+            <li>Au revoir!</li>
+          </ul>
+          <p>
+            Combine all list items into a paragraph.
+          </p>
+          <a href="#/" class="btn btn-primary">.text()</a>
+          <code></code>
+        </div>
+      </div>
+      <div class="jq-data card mb-3">
+        <div class="card-body">
+          <p data-change="Goodbye!">
+            Hello!
+          </p>
+          <p>Click Hello! to say Goodbye!</p>
+          <p data-change="Hello!">
+            Goodbye!
+          </p>
+          <p>Click Goodbye! to say Hello!</p>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      // Click
+      $('.jq-click .btn').click(function() {
+        $('.jq-click p').css('color', 'blue');
+      });
+
+      // Hide
+      $('.jq-hide .btn').click(function() {
+        $('.jq-hide').find('img').hide();
+      });
+
+      // Show
+      $('.jq-show .btn').click(function() {
+        $('.jq-show').find('p:first').show();
+      });
+
+      // Toggle
+      $('.jq-toggle .btn').click(function() {
+        $('body').css({
+          'background-color': 'black',
+        });
+        $('.card').css('background','rgba(255,255,255,.75)');
+      });
+
+      // Slide down
+      $('.jq-slideDown .btn').click(function() {
+        $('.jq-slideDown .card').slideDown();
+      });
+
+      // Slide up
+      $('.jq-slideUp .btn').click(function() {
+        $('.jq-slideUp .card').slideUp();
+      });
+      
+      // Slide toggle
+      $('.jq-slideToggle .btn').click(function() {
+        $('.jq-slideToggle form').slideToggle();
+      });
+      
+      // Fade in
+      $('.jq-fadeIn .btn').click(function() {
+        $('.jq-fadeIn .alert').fadeIn();
+      });
+
+      // Fade out
+      $('.jq-fadeOut .btn').click(function() {
+        $('.jq-fadeOut .alert').fadeOut();
+      });
+      
+      // Add class
+      $('.jq-addClass .btn').click(function() {
+        $('.jq-addClass').addClass('border-primary');
+      });
+      
+      // Before
+      $('.jq-before .btn').click(function() {
+        $('.jq-before p:last').before('<p>Hello!</p>');
+      });
+      
+      // After
+      $('.jq-after .btn').click(function() {
+        $('.jq-after p:last').after('<p>Goodbye!</p>');
+      });
+      
+      // Append
+      $('.jq-append .btn').click(function() {
+        $('.jq-append .card-body').append('<p>This paragraph was appended by you!</p>');
+      });
+      
+      // html
+      $('.jq-html .btn').click(function() {
+        $('.jq-html .card .card-body').html('Thanks for replacing me!');
+      });
+      
+      // attr
+      $('.jq-attr a').click(function(e) {
+        e.preventDefault();
+        $('.jq-attr code').html($(this).attr('href'));
+      });
+      
+      // attr
+      $('.jq-val input').keyup(function() {
+        $('.jq-val code').html($(this).val());
+      });
+      
+      // text
+      $('.jq-text .btn').click(function() {
+        $('.jq-text code').html($('.jq-text li').text());
+      });
+      
+      // data
+      $('.jq-data p').click(function() {
+        $(this).html($(this).data('change'));
+      });
+      
+
+    </script>
+  </body>
+</html>
