@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery Functions</title>
+    <link rel="stylesheet" href="jquery.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        $('document').ready(function () {
+
+            $('#addclass').click(function () {
+                $('#p1').addClass("red");
+            });
+
+            $('#slidetoggle').click(function () {
+                $('#cat').slideToggle("slow");
+            });
+
+            $('#append').click(function () {
+                $('#p2').append("<p>hello new</p>");
+            });
+
+            $('#click').click(function () {
+                alert("You have clicked the button");
+            });
+
+            $('#show').click(function () {
+                $('#cat').show();
+            });
+
+            $('#toggle').click(function () {
+                $('p').toggle();
+            });
+
+            $('#slideDown').click(function () {                
+                $("#ninja").slideDown();
+            });
+
+            $('#slideUp').click(function () {                
+                $("#globe").slideUp();
+            });
+
+            $('#fadein').click(function () {                
+                $("#phone").fadeIn("slow");
+            });
+
+            $('#fadeout').click(function () {                
+                $("#home").fadeOut();
+            });
+
+            $('#before').click(function () {                
+                $("#p3").before("<p>Before p tag </p>");
+            });
+
+            $('#after').click(function () {                
+                $("#p4").after("<p>after p tag </p>");
+            });
+
+            $('#html').click(function () {                
+                $("p").html("<span class='red'> This is new HTML <b> in jQuery</b></span>");
+            });
+
+            $('#val').click(function () {   
+                var text = $('#p5').text();             
+                $("input").val(text);
+            });
+
+            $('#text').click(function () {   
+                var text = $('#p6').before("<p>Test of text</p>").text();             
+                $("#p6").val(text);
+            });
+
+            $('#data').click(function () {   
+                $( "div" ).data( "test", { first: 16, last: "pizza!" } );
+                $( "span:first" ).text( $( "div" ).data( "test" ).first );
+                $( "span:last" ).text( $( "div" ).data( "test" ).last );
+            });
+
+            
+        });
+        
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Jquery Functions test
+        </h1>
+    </header>
+    <article>
+        <h1>AddClass</h1>
+        <button id='addclass' type="submit">AddClass</button>
+        <p id="p1">Click the button to add class 'red' to this paragraph</p>
+    </article>
+    <article>
+        <h1>Slidetoggle</h1>
+        <button id='slidetoggle' type="submit">Slidetoggle</button>
+        <p>Click the button to Slidetoggle a hidden image</p>
+        <img id="cat" src="linkcat.png" alt="ninja">
+    </article>
+    <article class="appendp">
+        <h1>Append</h1>
+        <button id='append' type="submit">Append</button>
+        <p id="p2">Click the button to append a new paragraph</p>
+    </article>
+    <article>
+        <h1>Click</h1>
+        <button id='click' type="submit">Click</button>
+        <p>Click the button</p>
+    </article>
+    <article>
+        <h1>Show</h1>
+        <button id='show' type="submit">Show</button>
+        <p>Click the button to show image</p>
+    </article>
+    <article>
+        <h1>Toggle</h1>
+        <button id='toggle' type="submit">Toggle</button>
+        <p>Click the button</p>
+        <p style="display: none">Hello there you clicked </p>
+    </article>
+    <article>
+        <h1>SlideDown</h1>
+        <button id='slideDown' type="submit">slideDown</button>
+        <img id="ninja" src="ninja.png" alt="ninja image">
+        <p>Click the button</p>
+    </article>
+    <article>
+        <h1>SlideUp</h1>
+        <button id='slideUp' type="submit">slideUp</button>
+        <img id="globe" src="globe.png" alt="globe image">
+        <p>Click the button</p>
+    </article>
+    <article>
+        <h1>FadeIn</h1>
+        <button id='fadein' type="submit">fadeIn</button>
+        <img id="phone" src="phone.png" alt="phone image">        
+        <p>Click the button</p>
+    </article>
+    <article>
+        <h1>FadeOut</h1>
+        <button id='fadeout' type="submit">fadeOut</button>
+        <img id="home" src="home.png" alt="home image">
+        <p>Click the button</p>
+    </article>
+    <article>
+        <h1>Before</h1>
+        <button id='before' type="submit">Before</button>
+        <p id="p3">Click the button</p>
+    </article>
+    <article>
+        <h1>After</h1>
+        <button id='after' type="submit">After</button>
+        <p id="p4">Click the button</p>
+    </article>
+    <article>
+        <h1>Html</h1>
+        <button id='html' type="submit">HTML</button>
+        <p>Click the button</p>
+    </article>
+    <article>
+        <h1>attr</h1>
+        <button id='attr' type="submit">attr</button>
+        <p>Click the button</p>
+    </article>
+    <article>
+        <h1>Val</h1>
+        <button id='val' type="submit">Val</button>
+        <input type="text" value="some text">
+        <p id="p5">Click the button</p>
+    </article>
+    <article>
+        <h1>Text</h1>
+        <button id='text' type="submit">Text</button>
+        <p id="p6">Click the button</p>
+    </article>
+    <article>
+        <h1>Data</h1>
+        <button id='data' type="submit">Data</button>
+        <div>
+            The values in the array are <span></span> and <span></span>
+        </div>
+        <p>Click the button</p>
+    </article>
+</body>
+
+</html>
