@@ -1,0 +1,40 @@
+header{
+    background-color: blueviolet;
+    color: white;
+    width: 970px;
+    text-align: center;
+    height: 50px;
+}
+article{
+    border-bottom: 2px solid grey;
+    width: 970px;
+    text-align: center;
+}
+.red{
+    color: red;
+}
+
+button{
+    background-color: rgb(66, 0, 128);
+    color: white;    
+}
+#ninja{
+    width: 100px;  
+    display: none;
+}
+p{
+    display:block;
+}
+#cat{
+    display: none;
+}
+
+#globe{
+    width: 50px;
+}
+#phone{
+    display: none;
+}
+span{
+    color: blue;
+}
