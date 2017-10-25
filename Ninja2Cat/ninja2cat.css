@@ -1,0 +1,14 @@
+#wrapper{
+	background-color:grey;
+}
+.container{
+	width:970px;
+	margin:0px auto;
+	
+}
+img {
+	width:40%;
+	height:20%;
+	display:block;
+	margin-top:2px;
+}
